@@ -10,6 +10,23 @@ namespace lesson5
     {
         static void Main(string[] args)
         {
+            var player = new AudioPlayer();
+
+            Console.WriteLine(player.Volume);
+
+            //player.Volume = 300;
+
+            player.VolumeUp();
+            player.VolumeUp();
+            player.VolumeUp();
+
+            player.VolumeChange(int.Parse(Console.ReadLine()));
+
+            Console.WriteLine(player.Volume);
+
+            //Console.WriteLine(player.Volume);
+
+            Console.ReadLine();
         }
     }
 }
