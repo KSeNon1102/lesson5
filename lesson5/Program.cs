@@ -10,6 +10,10 @@ namespace lesson5
     {
         static void Main(string[] args)
         {
+            var song = new Song()
+            {
+                Lyrics = string.Empty
+            };
             var player = new AudioPlayer();
 
             Console.WriteLine(player.Volume);
