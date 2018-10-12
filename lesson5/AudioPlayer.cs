@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace lesson5
 {
@@ -53,6 +51,13 @@ namespace lesson5
             var songs = this.songs.Where(w=>Playlist.Contains(w.Name));
             this.songs = songs.ToArray();
         }
+
+        public void Add(string[] Playlist)
+        {
+            var songs = this.songs.Where(w => Playlist.Contains(w.Name));
+            this.songs = songs.ToArray();
+        }
+
 
         public void Play()
         {
